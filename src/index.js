@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 class App extends React.Component {
   render () {
-    return <p> Welcome To React Starter Pack </p>;
+    return <div className="chip">Welcome to the React Starter Pack</div>;
   }
 }
 
