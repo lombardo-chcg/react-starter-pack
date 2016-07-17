@@ -1,10 +1,24 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux'
+
+import Counter from './components/counter'
+import Store from './reducers/index'
 
 class App extends React.Component {
   render () {
-    return <div className="chip">Welcome to the React Starter Pack</div>;
+    return (
+      <div>
+        <div className="chip">Welcome to the React Starter Pack</div>
+        <Counter />
+      </div>
+    )
   }
 }
 
-render(<App/>, document.getElementById('app'));
+ReactDOM.render(
+  <Provider store={Store}>
+    <App/>
+  </Provider>
+  , document.getElementById('app'));
