@@ -9,7 +9,6 @@ const squared = (state = 2, action) => {
     case 'RESET':
       return 2;
     default:
-      console.log('default')
       return state;
   }
 }

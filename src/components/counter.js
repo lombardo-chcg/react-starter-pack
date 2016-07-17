@@ -1,8 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { square, squareRoot, reset } from '../actions/index'
-
 
 class Counter extends React.Component {
   squareClick() {
@@ -31,14 +27,6 @@ class Counter extends React.Component {
 
 function buttonClass() {
   return "blue accent-1 waves-effect waves-light btn"
-}
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ square, squareRoot, reset }, dispatch)
-}
-
-function mapStateToProps(state) {
-  return { counter: state };
 }
 
 export default Counter;
