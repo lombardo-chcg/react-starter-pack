@@ -26,7 +26,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 function mapStateToProps(state) {
-  return { counter: state };
+  return { counter: state.counter };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CounterContainer)
