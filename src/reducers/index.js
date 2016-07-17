@@ -1,19 +1,10 @@
+import { combineReducers } from 'redux'
 import { createStore } from 'redux';
 
-const squared = (state = 2, action) => {
-  switch (action.type) {
-    case 'SQUARE':
-      return state * state;
-    case 'SQUARE_ROOT':
-      return Math.sqrt(state);
-    case 'RESET':
-      return 2;
-    default:
-      console.log('default')
-      return state;
-  }
-}
+import CounterReducer from './reducer_counter'
 
-const Store = createStore(squared)
+const rootReducer = combineReducers({
+    counter: CounterReducer
+});
 
-export default Store;
+export default rootReducer;
