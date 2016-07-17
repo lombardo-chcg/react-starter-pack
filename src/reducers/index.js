@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux'
-import { createStore } from 'redux';
 
 import CounterReducer from './reducer_counter'
 
