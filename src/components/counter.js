@@ -17,7 +17,7 @@ class Counter extends React.Component {
   render() {
     return(
       <div>
-        <Link to='/'>Landing Page (this link is a redux router example)</Link>
+        <Link to='/'>Landing Page</Link>
         <p>=> {this.props.counter}</p>
         <button className={buttonClass()} onClick={this.squareClick.bind(this)}>square</button>
         <button className={buttonClass()} onClick={this.squareRootClick.bind(this)}>square root</button>
