@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+import NavBar from './navbar';
 
-import NavBar from './navbar'
-
-class App extends React.Component {
+export default class App extends Component {
   render () {
     return (
       <div>
@@ -10,8 +9,6 @@ class App extends React.Component {
         <NavBar />
         {this.props.children}
       </div>
-    )
+    );
   }
 }
-
-export default App;
