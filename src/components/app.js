@@ -1,12 +1,13 @@
 import React from 'react';
 
-import CounterContainer from '../containers/container_counter';
+import NavBar from './navbar'
 
 class App extends React.Component {
   render () {
     return (
       <div>
-        <div className="chip">Welcome to the React Starter Pack</div>
+        <h4 className='center-align'>Welcome to the React Starter Pack</h4>
+        <NavBar />
         {this.props.children}
       </div>
     )

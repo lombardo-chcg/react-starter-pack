@@ -17,8 +17,7 @@ class Counter extends React.Component {
   render() {
     return(
       <div>
-        <Link to='/'>Landing Page</Link>
-        <p>=> {this.props.counter}</p>
+        <h3 className='center-align'> {this.props.counter} </h3>
         <button className={buttonClass()} onClick={this.squareClick.bind(this)}>square</button>
         <button className={buttonClass()} onClick={this.squareRootClick.bind(this)}>square root</button>
         <button className={buttonClass()} onClick={this.resetClick.bind(this)}>reset</button>
@@ -28,7 +27,7 @@ class Counter extends React.Component {
 }
 
 function buttonClass() {
-  return "blue accent-1 waves-effect waves-light btn"
+  return "blue accent-1 waves-effect waves-light btn counter-buttons"
 }
 
 export default Counter;
