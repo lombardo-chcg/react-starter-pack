@@ -1,1 +1,9 @@
-/*Learn about Materialize CSS here => http://materializecss.com/*/
+/*  This starter pack uses Materialize CSS.  Find out more here => http://materializecss.com/
+    Add custom styles in this file
+*/
+
+.counter-buttons {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+}
