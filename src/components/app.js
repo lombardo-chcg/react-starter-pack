@@ -7,7 +7,7 @@ class App extends React.Component {
     return (
       <div>
         <div className="chip">Welcome to the React Starter Pack</div>
-        <CounterContainer />
+        {this.props.children}
       </div>
     )
   }

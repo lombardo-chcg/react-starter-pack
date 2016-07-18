@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Counter extends React.Component {
   squareClick() {
@@ -16,7 +17,8 @@ class Counter extends React.Component {
   render() {
     return(
       <div>
-        <p>{this.props.counter}</p>
+        <Link to='/'>Landing Page (this link is a redux router example)</Link>
+        <p>=> {this.props.counter}</p>
         <button className={buttonClass()} onClick={this.squareClick.bind(this)}>square</button>
         <button className={buttonClass()} onClick={this.squareRootClick.bind(this)}>square root</button>
         <button className={buttonClass()} onClick={this.resetClick.bind(this)}>reset</button>
