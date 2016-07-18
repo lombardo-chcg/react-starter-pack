@@ -8,11 +8,11 @@ How to use:
 git clone https://github.com/lombardo-chcg/react-starter-pack.git
 cd react-starter-pack
 npm install
-npm start
+npm run dev
 ```
 
-Then open the directory's `index.html` file in any browser.
-Hack some code, save and refresh the page to see your changes live.
-(localhost server edition coming soon)
+Your project will be available at http://localhost:8080/
 
-Includes a working 'counter' to show Redux functionality 
+Hack some code, save and refresh the page to see your changes live.
+
+This pack includes a working 'counter' to show Redux functionality

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d --watch",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "start": "webpack -d --watch",
     "build": "webpack -p"
   },
@@ -20,6 +20,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.5.2",
     "redux": "^3.5.2",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
