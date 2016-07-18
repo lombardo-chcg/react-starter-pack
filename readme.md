@@ -21,3 +21,4 @@ Your project will be available at http://localhost:8080/
 Hack some code, save and refresh the page to see your changes live.
 
 ## Deploy Me
+This package is ready to be deployed to Heroku.  [Deploy it with git](https://devcenter.heroku.com/articles/git) 
