@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-class Counter extends React.Component {
+export default class Counter extends Component {
+  constructor(props) {
+    super(props);
+
+    this.squareClick = this.squareClick.bind(this);
+    this.squareRootClick = this.squareRootClick.bind(this);
+    this.resetClick = this.resetClick.bind(this);
+  }
+
   squareClick() {
     this.props.square()
   }
@@ -15,19 +23,14 @@ class Counter extends React.Component {
   }
 
   render() {
-    return(
+    const buttonClass = "blue accent-1 waves-effect waves-light btn counter-buttons";
+    return (
       <div>
-        <h3 className='center-align'> {this.props.counter} </h3>
-        <button className={buttonClass()} onClick={this.squareClick.bind(this)}>square</button>
-        <button className={buttonClass()} onClick={this.squareRootClick.bind(this)}>square root</button>
-        <button className={buttonClass()} onClick={this.resetClick.bind(this)}>reset</button>
+        <h3 className='center-align'>{this.props.counter}</h3>
+        <button className={buttonClass} onClick={this.squareClick}>square</button>
+        <button className={buttonClass} onClick={this.squareRootClick}>square root</button>
+        <button className={buttonClass} onClick={this.resetClick}>reset</button>
       </div>
-    )
+    );
   }
 }
-
-function buttonClass() {
-  return "blue accent-1 waves-effect waves-light btn counter-buttons"
-}
-
-export default Counter;

@@ -5,9 +5,5 @@ import React from 'react';
 import { Link } from 'react-router';
 
 export default () => {
-  return(
-    <p className='center-align'>
-      make something cool
-    </p>
-  )
+  return <p className='center-align'>make something cool</p>;
 }
