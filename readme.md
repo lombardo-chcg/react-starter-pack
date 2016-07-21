@@ -3,10 +3,11 @@
 A basic starter pack for building React applications with Redux state management.
 
 Out of the box:
-* React with mounted root component
-* Redux with a rootReducer and a sample child reducer wired up
-* React Router with some sample routes wired up
-* Materialize CSS included
+* [https://facebook.github.io/react/](React) with mounted root component
+* [https://github.com/reactjs/redux](Redux) with a rootReducer and a sample child reducer wired up
+* [https://github.com/reactjs/react-router](React) Router with some sample routes wired up
+* [https://github.com/mzabriskie/axios](axios) for AJAX requests
+* [http://materializecss.com/](Materialize) CSS library included
 
 ## Dev Mode
 How to use:
