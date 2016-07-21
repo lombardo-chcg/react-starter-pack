@@ -4,7 +4,7 @@ A basic starter pack for building React applications with Redux state management
 
 Out of the box:
 * [React](https://facebook.github.io/react/) with mounted root component
-* [Redux](ttps://github.com/reactjs/redux) with a rootReducer and a sample child reducer wired up
+* [Redux](https://github.com/reactjs/redux) with a rootReducer and a sample child reducer wired up
 * [React Router](https://github.com/reactjs/react-router) with some sample routes wired up
 * [Axios](https://github.com/mzabriskie/axios) for AJAX requests
 * [Materialize](http://materializecss.com/) CSS library included
@@ -23,3 +23,6 @@ Hack some code, save and refresh the page to see your changes live.
 
 ## Deploy Me
 This package is ready to be deployed to Heroku.  [Deploy it with git](https://devcenter.heroku.com/articles/git).
+
+## Shout Outs
+s/o [Tom](https://github.com/tomsapps) for adding some ES6 Sugar
