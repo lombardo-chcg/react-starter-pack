@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { square, squareRoot, reset } from '../actions/index';
 
+import { square, squareRoot, reset } from '../actions/index';
 import Counter from '../components/counter';
 
 class CounterContainer extends Component {
