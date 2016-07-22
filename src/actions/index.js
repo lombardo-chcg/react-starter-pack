@@ -25,7 +25,7 @@ export function reset() {
   };
 }
 
-const URL = 'http://api.icndb.com/jokes/random'
+const URL = '//api.icndb.com/jokes/random'
 
 export function makeApiCall() {
   const request = axios.get(URL);
